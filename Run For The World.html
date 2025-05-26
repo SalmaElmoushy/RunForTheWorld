@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Help The Enviroment">
+    <title>Run For The Enviroment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Run For The World.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/Run For The Environment.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script>
+      function show_hide(){
+        var x =  document.getElementById("Hide");
+        x.classList.toggle('hide');
+      }   
+      function OpenWeb(){
+            var str = document.getElementById("Search").value;
+            if (str == "Climate change solutions") {
+                window.open("https://www.greenpeace.org.uk/challenges/climate-change/solutions-climate-change/");
+            }
+            else if ( str == "What is climate Change?"){
+                window.open("https://youtu.be/EuwMB1Dal-4");
+            }
+            else if ( str == "Puzzle"){
+                window.open("https://www.proprofsgames.com/jigsaw/climate-change-escape-room/");
+            }
+            else {
+                alert("The input you searched for is unavaliable")
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="background video.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" onclick="show_hide()"></i>
+      </label>
+      <label class="logo">
+        <img class="pageLogo" src="Images/Run For The Environment.jpg" alt="Page Logo">
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <div class="dropdown">
+          <li id="two"><a href="#" class="dropbtn" >Table of content</a></li>
+          <div class="dropdown-content">
+              <a href="#">Researches</a>
+              <a href="#"> Projects</a>
+              <a href="#">Videos</a>
+              <a href="#">Events & Activities</a>
+          </div>
+      </div>
+        <li><a href="Team.html">Team</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li class="five">
+          <input type="search" placeholder="Search..." list="input" id="Search"style=" width=200px;">
+          <i class="fa fa-search" aria-hidden="true" class="S_img"  onclick="OpenWeb()" style="color: aliceblue;"></i>
+          <datalist id="input">
+              <option value="Climate change solutions" onclick="OpenWeb()">article</option>
+              <option value="What is climate Change?" onclick="OpenWeb()">video</option>
+              <option value="Puzzle"  onclick="OpenVideo()">Game</option>
+          </datalist>
+          
+      </li>
+      </ul>
+    </nav>
+        <div class="animated-heading">
+          <h1> <span id="words">Save Our Environment.</span></h1>
+        </div>
+    <script type="text/javascript">
+      (function () {
+        var words = ["Save Our Environment.","Take Action.","Make a Difference.","Be a Part.","Make a Change.","We Can." ],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 3000)
+      })();
+    </script>
+  </body>
+</html>

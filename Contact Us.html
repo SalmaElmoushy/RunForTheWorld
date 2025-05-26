@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head><!---->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Help The Enviroment">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Contact Us.css">        
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>This section is made for you, so if you have any questions or suggestions to make, don't hesitate to let us know. Also, you can upload your research or project here, and when it is approved, it will automatically publish. Thanks:)</p> 
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Cairo,<br>Egypt.</p>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>01026930949</p>
+                            </div>
+                        
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>runfortheenvironment@gmail.com</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form method="post" action="Contact Form.php" class="contact-form">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="Email" required="required" >
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea name="message" required id="message"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="file" name="Image" onchange="readURL(this)" accept="Images/*">
+                            <span>Upload your file</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name ="submit" value="Send">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

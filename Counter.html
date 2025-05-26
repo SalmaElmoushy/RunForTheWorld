@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+    <link rel="stylesheet" href="Counter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <img src="Images/running.png"><br>
+                    <h2 class="counter">50</h2>
+                    <h4>Sportive Volunteers</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <img src="Images/seeding.png"><br>
+                    <h2 class="counter">75</h2>
+                    <h4>Environmental Volunteers</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <img src="Images/plastic-bag.png"><br>
+                    <h2 class="counter">100</h2>
+                    <h4>Recyled Plastic Bags </h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <img src="Images/handshake.png"><br>
+                    <h2 class="counter">1</h2>
+                    <h4>Sponsors</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+</html>
